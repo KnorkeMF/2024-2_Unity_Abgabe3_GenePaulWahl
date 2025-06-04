@@ -11,13 +11,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce = 2.0f;
     private float direction = 0f;
     
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     
-    bool canMove = true; 
+    public bool canMove = true; 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -70,14 +70,36 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             coinManager.AddCoin();  
         }
+        
+        if (other.CompareTag("diamond"))
+        {
+            Debug.Log(message: "diamond kollidiert");
+            Destroy(other.gameObject);
+            coinManager.AddDia();
+        }
 
-        else if (other.CompareTag("obstacle"))
+        if (other.CompareTag("obstacle"))
         {
             Debug.Log(message: "Es war ein obstacle");
             uiManager.ShowPanelLost();
-            rb.linearVelocity = Vector2.zero;
-            canMove = false;
+            MovementStop();
+        }
+        
+        if (other.CompareTag("portal"))
+        {
+            Debug.Log(message: "Es war ein portal");
+            Destroy(other.gameObject);
+            MovementStop();
+            gameObject.SetActive(false);
+            uiManager.ShowPanelWin();
+            
         }
        
+    }
+    public void MovementStop()
+    {
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
+        
     }
 }

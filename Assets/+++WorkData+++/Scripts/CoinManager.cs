@@ -4,20 +4,29 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
 
-[SerializeField] public int counter = 0;
+[SerializeField] public int coinCounter = 0;
+[SerializeField] public int diaCounter = 0;
 [SerializeField] private UIManager uiManager;
 
 
     private void Start()
     {
-      counter = 0;
-      uiManager.UpdateCoinText(counter);
+      coinCounter = 0;
+      uiManager.UpdateCoinText(coinCounter);
+      diaCounter = 0;
+      uiManager.UpdateDiaText(diaCounter);
     }
 
     public void AddCoin()
     {
-        counter++;
-        uiManager.UpdateCoinText(counter);
+        coinCounter++;
+        uiManager.UpdateCoinText(coinCounter);
+    }
+
+    public void AddDia()
+    {
+        diaCounter++;
+        uiManager.UpdateDiaText(diaCounter);
     }
     
 }

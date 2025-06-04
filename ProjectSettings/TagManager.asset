@@ -6,6 +6,8 @@ TagManager:
   tags:
   - coin
   - obstacle
+  - portal
+  - diamond
   layers:
   - Default
   - TransparentFX
