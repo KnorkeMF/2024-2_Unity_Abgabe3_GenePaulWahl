@@ -1,0 +1,844 @@
+fileFormatVersion: 2
+guid: d0950743bb164ad41a33bc959a981e4e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2987788250744572274
+    second: TileMap Ground Half Level1_0
+  - first:
+      213: 7150928696505824119
+    second: TileMap Ground Half Level1_1
+  - first:
+      213: -8031350493656746384
+    second: TileMap Ground Half Level1_2
+  - first:
+      213: 3500135763772503363
+    second: TileMap Ground Half Level1_3
+  - first:
+      213: 1230396542022427210
+    second: TileMap Ground Half Level1_4
+  - first:
+      213: -8546681309982332461
+    second: TileMap Ground Half Level1_5
+  - first:
+      213: 6588746645108183098
+    second: TileMap Ground Half Level1_6
+  - first:
+      213: 7019964917910897906
+    second: TileMap Ground Half Level1_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 0}
+        - {x: -11, y: 0}
+        - {x: -14, y: -2}
+        - {x: -16, y: -5}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27947b58591c67920800000000000000
+      internalID: 2987788250744572274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 0}
+        - {x: -16, y: 0}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773706123c33d3360800000000000000
+      internalID: 7150928696505824119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -5}
+        - {x: 14, y: -2}
+        - {x: 11, y: 0}
+        - {x: -16, y: 0}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0767ee62749ea8090800000000000000
+      internalID: -8031350493656746384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 2}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 3}
+        - {x: -11, y: 2}
+        - {x: 4, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345fc41ceeaf29030800000000000000
+      internalID: 3500135763772503363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 10, y: 2}
+        - {x: 16, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 2}
+        - {x: -12, y: 1}
+        - {x: 1, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42ad14d22f331110800000000000000
+      internalID: 1230396542022427210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 2}
+        - {x: 14, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 1}
+        - {x: -7, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9680e71a6146980800000000000000
+      internalID: -8546681309982332461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 0}
+        - {x: -11, y: 0}
+        - {x: -14, y: -2}
+        - {x: -16, y: -5}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3058b04a2eef6b50800000000000000
+      internalID: 6588746645108183098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 0}
+        - {x: -16, y: 0}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f488c346eceb6160800000000000000
+      internalID: 7019964917910897906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -5}
+        - {x: 13, y: -1}
+        - {x: 10, y: 0}
+        - {x: -16, y: 0}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5608efaa906383c4ebf4c4a5215c7561
+      internalID: -1075712596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -15, y: 3}
+        - {x: -7, y: 1}
+        - {x: 4, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442cb206e334b9441b1cd3a630673a0d
+      internalID: -207143084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 1}
+        - {x: -8, y: 1}
+        - {x: 2, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7147f222575efb4bbdc6f30f964eeee
+      internalID: -43496576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 4, y: 2}
+        - {x: 14, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 0}
+        - {x: -7, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009263a9cc453ca4886d88c1e3736476
+      internalID: 1843440890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 0}
+        - {x: -11, y: 0}
+        - {x: -14, y: -2}
+        - {x: -16, y: -5}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13645f12824fc7743bf1a5ed631965f7
+      internalID: 222260044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 0}
+        - {x: -16, y: 0}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79f27d822b32814798a6c40c6f2170d
+      internalID: 2055296737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -5}
+        - {x: 14, y: -2}
+        - {x: 11, y: 0}
+        - {x: -16, y: 0}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d540703e7d5a74781a82650b5a83a0
+      internalID: -695522349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 3}
+        - {x: -9, y: 1}
+        - {x: 5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384f8774d217a9048a11fce8c288966e
+      internalID: -905134834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 1}
+        - {x: -7, y: 1}
+        - {x: 1, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5206b368ff247ab4a91606ee83f62f1f
+      internalID: -2059072044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 1}
+        - {x: -5, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f250669b58f0f9e418519c2022b1d03c
+      internalID: 350433089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -3}
+        - {x: 13, y: 0}
+        - {x: -11, y: 0}
+        - {x: -14, y: -2}
+        - {x: -16, y: -5}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56029922fbb87da49894183a95b0c89d
+      internalID: -1760621542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -3}
+        - {x: 13, y: 0}
+        - {x: -11, y: 0}
+        - {x: -16, y: -5}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2698c0e0bb0d743acdc1be9aeb11e6
+      internalID: 1307251270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -4}
+        - {x: 13, y: 0}
+        - {x: -11, y: 0}
+        - {x: -16, y: -3}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba438b7dd18577b4497d61be797e141d
+      internalID: 678192145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 13, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -14, y: 2}
+        - {x: 0, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d3e9362205db44b81e77b2f7d35534
+      internalID: -1489485268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 13, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -15, y: 2}
+        - {x: 1, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb9723a1978cd14eb1eafd597aee665
+      internalID: -722615926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap Ground Half Level1_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 13, y: 1}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -15, y: 1}
+        - {x: 1, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c4a55e0d2c88f4ca53f089b53373c1
+      internalID: 2064713113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8329bd7775fcc44a802a8e0aa27d2f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TileMap Ground Half Level1_0: 2987788250744572274
+      TileMap Ground Half Level1_1: 7150928696505824119
+      TileMap Ground Half Level1_10: -43496576
+      TileMap Ground Half Level1_11: 1843440890
+      TileMap Ground Half Level1_12: 222260044
+      TileMap Ground Half Level1_13: 2055296737
+      TileMap Ground Half Level1_14: -695522349
+      TileMap Ground Half Level1_15: -905134834
+      TileMap Ground Half Level1_16: -2059072044
+      TileMap Ground Half Level1_17: 350433089
+      TileMap Ground Half Level1_18: -1760621542
+      TileMap Ground Half Level1_19: 1307251270
+      TileMap Ground Half Level1_2: -8031350493656746384
+      TileMap Ground Half Level1_20: 678192145
+      TileMap Ground Half Level1_21: -1489485268
+      TileMap Ground Half Level1_22: -722615926
+      TileMap Ground Half Level1_23: 2064713113
+      TileMap Ground Half Level1_3: 3500135763772503363
+      TileMap Ground Half Level1_4: 1230396542022427210
+      TileMap Ground Half Level1_5: -8546681309982332461
+      TileMap Ground Half Level1_6: 6588746645108183098
+      TileMap Ground Half Level1_7: 7019964917910897906
+      TileMap Ground Half Level1_8: -1075712596
+      TileMap Ground Half Level1_9: -207143084
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

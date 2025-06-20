@@ -55,8 +55,6 @@ public class PlayerController : MonoBehaviour
                 {rb.linearVelocity = new Vector2(x:0, jumpForce);}
             }
         } 
-  
-        
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -76,6 +74,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(message: "diamond kollidiert");
             Destroy(other.gameObject);
             coinManager.AddDia();
+            uiManager.PlusCountdown();
         }
 
         if (other.CompareTag("obstacle"))

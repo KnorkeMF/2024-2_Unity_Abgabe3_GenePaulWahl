@@ -15,7 +15,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - TilemapGround
   - 
   - 
   - 
@@ -44,6 +44,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Backround
+    uniqueID: 1987390507
+    locked: 0
+  - name: Ground
+    uniqueID: 840917671
+    locked: 0
+  - name: Komets
+    uniqueID: 1053274911
+    locked: 0
+  - name: Bones
+    uniqueID: 1845991237
+    locked: 0
+  - name: Collactables
+    uniqueID: 3257684855
+    locked: 0
+  - name: Foreground
+    uniqueID: 596919181
     locked: 0
   m_RenderingLayers:
   - Default

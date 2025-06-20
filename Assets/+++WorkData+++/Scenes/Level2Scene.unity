@@ -292,7 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 523f7a660d1365e4386c1c8c682b0a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 0
+  coinCounter: 0
+  diaCounter: 0
   uiManager: {fileID: 1984298008}
 --- !u!4 &399361167
 Transform:
@@ -428,22 +429,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12e793708b28f60429aae076876db789, type: 3}
---- !u!114 &867225297 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5542696714615077974, guid: 76a24c85beb17e242aca142595a3a237, type: 3}
-  m_PrefabInstance: {fileID: 1865649881}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &997970888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2407868321650827569, guid: 76a24c85beb17e242aca142595a3a237, type: 3}
-  m_PrefabInstance: {fileID: 1865649881}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &997970889 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 419102974087159243, guid: 76a24c85beb17e242aca142595a3a237, type: 3}
@@ -649,12 +634,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672140724}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.584, y: -0.046, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1968088310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1672140728
 MonoBehaviour:
@@ -925,12 +910,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinManager: {fileID: 399361166}
   uiManager: {fileID: 1984298008}
-  speed: 2
-  jumpForce: 2
+  speed: 6
+  jumpForce: 4
+  rb: {fileID: 0}
   groundCheck: {fileID: 215940986}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  canMove: 1
 --- !u!50 &1968088307
 Rigidbody2D:
   serializedVersion: 5
@@ -1073,6 +1060,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 215940986}
+  - {fileID: 1672140727}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1984298007
@@ -1094,7 +1082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1984298008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,14 +1095,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ac5fe366685ab4e86edbc214e82db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterText: {fileID: 867225297}
-  panelCounter: {fileID: 997970888}
+  player: {fileID: 0}
+  coinManager: {fileID: 0}
+  coinCounterText: {fileID: 0}
+  panelCoinCounter: {fileID: 0}
+  diaCounterText: {fileID: 0}
+  panelDiaCounter: {fileID: 0}
+  countdownText: {fileID: 0}
+  panelCountdown: {fileID: 0}
   panelLost: {fileID: 452538332}
   buttonRestart: {fileID: 519500498}
   buttonMainMenuLost: {fileID: 43964796}
+  countdownTextLost: {fileID: 0}
   panelWon: {fileID: 1856836602}
   buttonContinue: {fileID: 0}
   buttonMainMenuWon: {fileID: 2140383702}
+  countdownTextWin: {fileID: 0}
+  scoreTextWin: {fileID: 0}
 --- !u!114 &1984298009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,10 +1141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1473,7 +1470,6 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1672140727}
   - {fileID: 1968088310}
   - {fileID: 1984298012}
   - {fileID: 1793351729}
