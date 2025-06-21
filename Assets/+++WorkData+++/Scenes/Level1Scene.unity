@@ -136495,7 +136495,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -136505,7 +136505,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 0.88}
+  m_Size: {x: 0.48, y: 0.88}
   m_EdgeRadius: 0
 --- !u!212 &1209875832
 SpriteRenderer:
@@ -137605,7 +137605,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.14}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -137615,7 +137615,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 0.88}
+  m_Size: {x: 0.55, y: 0.9}
   m_EdgeRadius: 0
 --- !u!212 &1311042442
 SpriteRenderer:
@@ -139743,7 +139743,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -139753,7 +139753,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 0.88}
+  m_Size: {x: 0.6, y: 0.65}
   m_EdgeRadius: 0
 --- !u!212 &1497164562
 SpriteRenderer:
@@ -140813,7 +140813,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.21}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -140823,7 +140823,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 0.88}
+  m_Size: {x: 0.51, y: 0.88}
   m_EdgeRadius: 0
 --- !u!212 &1609414302
 SpriteRenderer:
@@ -144917,11 +144917,9 @@ MonoBehaviour:
   panelLost: {fileID: 452538332}
   buttonRestart: {fileID: 519500498}
   buttonMainMenuLost: {fileID: 43964796}
-  countdownTextLost: {fileID: 0}
   panelWon: {fileID: 1856836602}
   buttonContinue: {fileID: 1568876437}
   buttonMainMenuWon: {fileID: 2140383702}
-  countdownTextWin: {fileID: 0}
   scoreTextWin: {fileID: 1046001764}
 --- !u!114 &1984298009
 MonoBehaviour:

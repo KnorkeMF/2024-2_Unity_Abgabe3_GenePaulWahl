@@ -261,8 +261,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -589,9 +589,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1087945291}
   typingSpeed: 0.05
-  startMessage: "Listen carefully... once you step through the portal, there\u2019s
-    no turning back... not without the artifacts. We can only speak again after you
-    pass through another portal into an anomaly. Go... and stay alert."
+  startMessage: "Are you in the cave? Good. At the end is a portal that throws you
+    through time and unknown worlds. The artifact\u2014the only way back\u2014is
+    hidden far ahead. No one knows where you\u2019ll land next. tzz... tzz...\nI\u2019ll
+    check in once you reach the Portal. Remember: once you step through, there\u2019s
+    no turning back."
   audioSource: {fileID: 1609493035}
   nextButton: {fileID: 1466461248}
 --- !u!4 &1609493034

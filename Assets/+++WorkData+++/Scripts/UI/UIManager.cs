@@ -23,19 +23,17 @@ public class UIManager : MonoBehaviour
     [SerializeField] public TextMeshProUGUI countdownText;
     [SerializeField] public GameObject panelCountdown;
     bool isGameOver = false;
-    private int countdownValue;
+    [SerializeField] int countdownValue = 20;
     
     [Header("---GameLost---")]
     [SerializeField] private GameObject panelLost;
     [SerializeField] Button buttonRestart;
     [SerializeField] Button buttonMainMenuLost;
-    [SerializeField] public TextMeshProUGUI countdownTextLost;
     
     [Header("---GameWon---")]
     [SerializeField] GameObject panelWon;
     [SerializeField] Button buttonContinue;
     [SerializeField] Button buttonMainMenuWon;
-    [SerializeField] public TextMeshProUGUI countdownTextWin;
     
     [Header("---Score---")]
     [SerializeField] public TextMeshProUGUI scoreTextWin;
@@ -61,7 +59,7 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void LoadMainMenu()
+    public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");
     }
@@ -101,7 +99,7 @@ public class UIManager : MonoBehaviour
     
     IEnumerator Countdown()
     {
-        countdownValue = 20;
+        
         while (countdownValue >= 0 && !isGameOver)
         {
             Debug.Log("countdown = " + countdownValue);
@@ -117,8 +115,6 @@ public class UIManager : MonoBehaviour
     void UpdateCountdownText()
     {
         countdownText.text = countdownValue.ToString();
-        countdownTextWin.text = countdownValue.ToString();
-        countdownTextLost.text = countdownValue.ToString();
         Debug.Log(message:"countdown updated");
 
         if (countdownValue <= 0)
@@ -132,7 +128,7 @@ public class UIManager : MonoBehaviour
     void UpdateScoreText()
     {
         int finalScore = countdownValue * 100 + coinManager.coinCounter * 15 + coinManager.diaCounter * 50;
-        scoreTextWin.text = "Score =" + finalScore.ToString();
+        scoreTextWin.text = "" + finalScore.ToString();
     }
 
     public void PlusCountdown()
