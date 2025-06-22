@@ -3,108 +3,125 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private CoinManager coinManager;       // Reference to coin manager
-    [SerializeField] private UIManager uiManager;           // Reference to UI manager
+    [SerializeField] private CoinManager coinManager;       // Reference to the coin manager
+    [SerializeField] private UIManager uiManager;           // Reference to the UI manager
+    
+    public AudioSource audioSource;                         // Audio source for playing sounds
+    public AudioClip coinSound;                             // Sound clip for collecting a coin
+    public AudioClip diamondSound;                          // Sound clip for collecting a diamond
+    public AudioClip jumpSound;                             // Sound clip for jumping
 
-    [SerializeField] private float speed = 2.0f;             // Movement speed of the player
-    [SerializeField] private float jumpForce = 2.0f;         // Force applied when jumping
-    private float direction = 0f;                             // Direction input (-1 left, 1 right)
+    [SerializeField] private float speed = 2.0f;            // Horizontal movement speed
+    [SerializeField] private float jumpForce = 2.0f;        // Vertical jump force
+    private float direction = 0f;                           // Current horizontal input direction
 
-    public Rigidbody2D rb;                                   // Rigidbody2D component reference
-    private SpriteRenderer spriteRenderer;                    // SpriteRenderer component reference
+    public Rigidbody2D rb;                                  // Reference to the Rigidbody2D component
+    private SpriteRenderer spriteRenderer;                  // Reference to the SpriteRenderer
 
     [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;          // Position to check if grounded
-    [SerializeField] private LayerMask groundLayer;           // Layer considered as ground
+    [SerializeField] private Transform groundCheck;         // Transform used to check if grounded
+    [SerializeField] private LayerMask groundLayer;         // Layer mask identifying what counts as ground
 
-    public bool canMove = true;                               // Flag to enable/disable movement
+    public bool canMove = true;                             // Flag to enable or disable player movement
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();                     // Get Rigidbody2D component
-        spriteRenderer = GetComponent<SpriteRenderer>();      // Get SpriteRenderer component
+        rb = GetComponent<Rigidbody2D>();                   // Get Rigidbody2D component
+        spriteRenderer = GetComponent<SpriteRenderer>();    // Get SpriteRenderer component
     }
 
     void Update()
     {
-        if (!canMove) return;                                  // Exit if movement disabled
+        if (!canMove) return;                               // Exit if movement is disabled
 
-        direction = 0f;                                        // Reset direction each frame
+        direction = 0f;                                      // Reset direction every frame
 
-        if (Keyboard.current.aKey.isPressed)                  // Check if 'A' key pressed
+        if (Keyboard.current.aKey.isPressed)                // Move left if 'A' key is pressed
         {
-            direction = -1f;                                   // Move left
+            direction = -1f;
         }
-        else if (Keyboard.current.dKey.isPressed)             // Check if 'D' key pressed
+        else if (Keyboard.current.dKey.isPressed)           // Move right if 'D' key is pressed
         {
-            direction = 1f;                                    // Move right
+            direction = 1f;
         }
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)    // Check if jump pressed this frame
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)  // Check if space was pressed this frame
         {
-            Jump();                                            // Perform jump
+            bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+            if (isGrounded)                                 // Only jump if on the ground
+            {
+                Jump();                                     
+                PlaySound(jumpSound);                        // Play jump sound
+            }
         }
 
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);  // Apply horizontal velocity
 
-        if (direction > 0)                                     // If moving right
+        if (direction > 0)                                  // Face right if moving right
         {
-            spriteRenderer.flipX = false;                      // Face right
+            spriteRenderer.flipX = false;
         }
-        else if (direction < 0)                                // If moving left
+        else if (direction < 0)                             // Face left if moving left
         {
-            spriteRenderer.flipX = true;                       // Face left
+            spriteRenderer.flipX = true;
         }
     }
 
     private void Jump()
     {
-        bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);  // Check ground
-        if (isGrounded)                                        // Only jump if grounded
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);  // Apply jump force
-        }
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);  // Apply vertical jump force
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("wir sind kollidiert");                      // Log collision event
+        Debug.Log("Collision detected");                    // Log any trigger collision
 
-        if (other.CompareTag("coin"))                          // Check if collided with coin
+        if (other.CompareTag("coin"))                       // If collided with a coin
         {
-            Debug.Log("mit einer Münze");                      // Log coin collision
-            Destroy(other.gameObject);                          // Remove coin from scene
-            coinManager.AddCoin();                              // Add coin to player count
+            Debug.Log("Collided with a coin");
+            PlaySound(coinSound);                           // Play coin sound
+            Destroy(other.gameObject);                      // Remove coin object
+            coinManager.AddCoin();                          // Increase coin count
         }
 
-        if (other.CompareTag("diamond"))                       // Check if collided with diamond
+        if (other.CompareTag("diamond"))                    // If collided with a diamond
         {
-            Debug.Log("diamond kollidiert");                   // Log diamond collision
-            Destroy(other.gameObject);                          // Remove diamond from scene
-            coinManager.AddDia();                               // Add diamond count
-            uiManager.PlusCountdown();                          // Increase countdown timer
+            Debug.Log("Collided with a diamond");
+            PlaySound(diamondSound);                        // Play diamond sound
+            Destroy(other.gameObject);                      // Remove diamond object
+            coinManager.AddDia();                           // Increase diamond count
+            uiManager.PlusCountdown();                      // Extend countdown timer
         }
 
-        if (other.CompareTag("obstacle"))                      // Check if collided with obstacle
+        if (other.CompareTag("obstacle"))                   // If collided with an obstacle
         {
-            Debug.Log("Es war ein obstacle");                  // Log obstacle collision
-            uiManager.ShowPanelLost();                          // Show lose panel
-            MovementStop();                                     // Stop player movement
+            Debug.Log("Collided with an obstacle");
+            uiManager.ShowPanelLost();                      // Show lose panel
+            MovementStop();                                 // Stop player movement
         }
 
-        if (other.CompareTag("portal"))                        // Check if collided with portal
+        if (other.CompareTag("portal"))                     // If collided with a portal
         {
-            Debug.Log("Es war ein portal");                    // Log portal collision
-            Destroy(other.gameObject);                          // Remove portal object
-            MovementStop();                                     // Stop player movement
-            gameObject.SetActive(false);                        // Disable player object
-            uiManager.ShowPanelWin();                           // Show win panel
+            Debug.Log("Collided with a portal");
+            Destroy(other.gameObject);                      // Remove portal object
+            MovementStop();                                 // Stop player movement
+            gameObject.SetActive(false);                    // Disable player object
+            uiManager.ShowPanelWin();                       // Show win panel
+        }
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);                  // Play a one-shot sound
         }
     }
 
     public void MovementStop()
     {
-        canMove = false;                                        // Disable movement flag
-        rb.linearVelocity = Vector2.zero;                             // Stop player velocity
+        canMove = false;                                    // Disable movement
+        rb.linearVelocity = Vector2.zero;                   // Stop all player velocity
     }
 }
